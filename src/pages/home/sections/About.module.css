@@ -1,0 +1,68 @@
+.about {
+  padding-block: var(--section-space);
+}
+
+.grid {
+  display: grid;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: center;
+}
+
+/* Złota ramka przesunięta względem zdjęcia */
+.media {
+  position: relative;
+  margin: 0 1rem 1rem 0;
+}
+
+.media::before {
+  content: '';
+  position: absolute;
+  inset: 1rem -1rem -1rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.media img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.features {
+  display: grid;
+  gap: 2rem;
+  margin-top: clamp(4rem, 8vw, 6.5rem);
+}
+
+.feature {
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.featureTitle {
+  margin-bottom: 0.75rem;
+  color: var(--color-ink);
+  font-size: 1.75rem;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 5fr 6fr;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}

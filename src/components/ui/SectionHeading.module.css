@@ -1,0 +1,20 @@
+.heading {
+  max-width: 44rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.title {
+  margin-top: 1.25rem;
+  font-size: clamp(2.25rem, 4.6vw, 3.6rem);
+}
+
+.intro {
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}

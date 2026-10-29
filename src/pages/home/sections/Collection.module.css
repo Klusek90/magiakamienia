@@ -1,0 +1,56 @@
+.collection {
+  padding-block: var(--section-space);
+}
+
+.grid {
+  display: grid;
+  gap: clamp(2.5rem, 4vw, 3.5rem) clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.imageWrap {
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--color-surface-2);
+}
+
+.imageWrap img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 1.2s var(--ease);
+}
+
+.card:hover .imageWrap img {
+  transform: scale(1.05);
+}
+
+.number {
+  margin-top: 1.5rem;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+
+.name {
+  margin-top: 0.5rem;
+  font-size: 1.85rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

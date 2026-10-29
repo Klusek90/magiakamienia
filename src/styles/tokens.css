@@ -1,0 +1,47 @@
+/* Paleta, typografia i odstępy całej strony. Zmiana tutaj = zmiana wszędzie. */
+:root {
+  /* Kamień — czerń z logo */
+  --color-bg: #0b0a09;
+  --color-surface: #141210;
+  --color-surface-2: #1d1a17;
+
+  /* Marmur — jasne sekcje */
+  --color-ivory: #f3efe8;
+  --color-ivory-deep: #e9e2d6;
+  --color-ivory-dim: #d6cfc3;
+
+  /* Żyłki — złoto, żar z logo i miedź */
+  --color-gold: #d9a35b;
+  --color-ember: #f0902e;
+  --color-copper: #9c5f38;
+
+  /* Tekst */
+  --color-text: #f3efe8;
+  --color-text-muted: #a69e93;
+  --color-ink: #1a1714;
+  --color-ink-muted: #5e564d;
+
+  --color-line: rgb(243 239 232 / 0.12);
+  --color-line-dark: rgb(26 23 20 / 0.14);
+
+  /* Kolory zależne od motywu sekcji (nadpisywane przez .theme-light) */
+  --accent: var(--color-gold);
+  --muted: var(--color-text-muted);
+  --line: var(--color-line);
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+
+  --container: 1240px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-space: clamp(4.5rem, 10vw, 8.5rem);
+  --header-height: 4.75rem;
+  --radius: 4px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (max-width: 899px) {
+  :root {
+    --header-height: 4rem;
+  }
+}

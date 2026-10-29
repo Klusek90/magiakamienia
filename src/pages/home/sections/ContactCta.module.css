@@ -1,0 +1,14 @@
+.cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: clamp(5.5rem, 12vw, 10rem);
+  background: radial-gradient(ellipse at center, var(--color-surface-2) 0%, var(--color-bg) 70%);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
