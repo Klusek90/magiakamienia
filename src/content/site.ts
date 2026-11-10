@@ -2,7 +2,7 @@
 export const site = {
   name: 'Magia Kamienia',
   tagline: 'Deski, patery i dekoracje z kamienia — wycinane i wykańczane ręcznie.',
-  email: 'magia.kamienia@2p.pl',
+  email: 'magia.kamienia@wp.pl',
   phone: '+48 536 344 954',
   location: 'Ceradz Kościelny, Polska',
   instagram: 'https://www.instagram.com/magiakamienia/',
